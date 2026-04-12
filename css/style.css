@@ -3,18 +3,9 @@
    For Cloudflare Pages — w9.se
    ============================================================ */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border-radius: 0 !important;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border-radius: 0 !important; }
 
-html {
-  font-size: 16px;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-}
+html { font-size: 16px; image-rendering: pixelated; image-rendering: -moz-crisp-edges; }
 
 body {
   font-family: 'VT323', 'Press Start 2P', monospace;
@@ -24,35 +15,14 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  color: #fce126;
-  text-decoration: none;
-  transition: all 0.1s;
-}
+a { color: #fce126; text-decoration: none; transition: all 0.1s; }
+a:hover { color: #ffffff; text-shadow: 0 0 8px #fce126; }
 
-a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 8px #fce126;
-}
+.app-container { min-height: 100vh; display: flex; flex-direction: column; }
 
-.app-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+.main-content { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
 
-.main-content {
-  flex: 1;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* ============================================================
-   Network Bar
-   ============================================================ */
-
+/* Network Bar */
 .network-bar {
   background: #32305a;
   border-bottom: 4px solid #000000;
@@ -89,10 +59,7 @@ a:hover {
   color: #fce126;
 }
 
-/* ============================================================
-   Buttons
-   ============================================================ */
-
+/* Buttons */
 .voxel-button {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.8rem;
@@ -115,19 +82,10 @@ a:hover {
   background: #f6cd6b;
 }
 
-.voxel-button--secondary {
-  background: #7f8aa8;
-  color: #ffffff;
-}
+.voxel-button--secondary { background: #7f8aa8; color: #ffffff; }
+.voxel-button--secondary:hover { background: #987b9e; }
 
-.voxel-button--secondary:hover {
-  background: #987b9e;
-}
-
-/* ============================================================
-   Cards
-   ============================================================ */
-
+/* Cards */
 .voxel-card {
   background: #160c13;
   border: 4px solid #000000;
@@ -136,10 +94,7 @@ a:hover {
   transition: all 0.1s;
 }
 
-.voxel-card:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 #000000;
-}
+.voxel-card:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 #000000; }
 
 .card-media {
   height: 120px;
@@ -149,14 +104,9 @@ a:hover {
   border-bottom: 4px solid #000000;
 }
 
-.card-icon {
-  font-size: 3rem;
-  filter: drop-shadow(3px 3px 0 #000000);
-}
+.card-icon { font-size: 3rem; filter: drop-shadow(3px 3px 0 #000000); }
 
-.card-body {
-  padding: 1.5rem;
-}
+.card-body { padding: 1.5rem; }
 
 .card-title {
   font-family: 'Press Start 2P', monospace;
@@ -168,11 +118,7 @@ a:hover {
   padding-bottom: 0.5rem;
 }
 
-.card-body p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
+.card-body p { font-size: 1.2rem; line-height: 1.5; margin-bottom: 1rem; }
 
 .card-grid {
   display: grid;
@@ -181,10 +127,7 @@ a:hover {
   margin-top: 2rem;
 }
 
-/* ============================================================
-   Hero Section
-   ============================================================ */
-
+/* Hero */
 .hero-section {
   position: relative;
   text-align: center;
@@ -203,7 +146,7 @@ a:hover {
   left: 0;
   right: 0;
   height: 60px;
-  background-image: 
+  background-image:
     radial-gradient(circle, #ffffff 1px, transparent 1px),
     radial-gradient(circle, #fce126 1px, transparent 1px),
     radial-gradient(circle, #ffffff 1px, transparent 1px);
@@ -213,10 +156,7 @@ a:hover {
   animation: twinkle 3s infinite alternate;
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.6; }
-}
+@keyframes twinkle { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
 
 .pixel-skyline {
   position: absolute;
@@ -227,10 +167,7 @@ a:hover {
   background: linear-gradient(180deg, transparent 0%, rgba(22, 12, 19, 0.3) 100%);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 10;
-}
+.hero-content { position: relative; z-index: 10; }
 
 .hero-title {
   font-family: 'Press Start 2P', monospace;
@@ -256,18 +193,10 @@ a:hover {
   line-height: 1.6;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.hero-actions { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
 
-/* ============================================================
-   Mission Section
-   ============================================================ */
-
-.mission-section {
+/* Sections */
+.mission-section, .deployments-section {
   margin-top: 3rem;
   max-width: 1200px;
   margin-left: auto;
@@ -286,18 +215,7 @@ a:hover {
   letter-spacing: 0.1em;
 }
 
-/* ============================================================
-   Deployments Section
-   ============================================================ */
-
-.deployments-section {
-  margin-top: 3rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
+/* Deployment cards */
 .deployment-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -315,10 +233,7 @@ a:hover {
   display: block;
 }
 
-.deployment-card:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 #000000;
-}
+.deployment-card:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 #000000; }
 
 .deployment-card h3 {
   font-family: 'Press Start 2P', monospace;
@@ -328,39 +243,15 @@ a:hover {
   text-transform: uppercase;
 }
 
-.deployment-card p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
+.deployment-card p { font-size: 1.2rem; margin-bottom: 1.5rem; line-height: 1.5; }
+
+/* Contributing */
+.contributing-section { text-align: center; max-width: 900px; margin: 3rem auto; padding: 0 1rem; }
+.contributing-content p { font-size: 1.3rem; margin-bottom: 1.5rem; line-height: 1.6; }
+.contributing-actions { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
 
 /* ============================================================
-   Contributing Section
-   ============================================================ */
-
-.contributing-section {
-  text-align: center;
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-.contributing-content p {
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.contributing-actions {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-/* ============================================================
-   Sponsors Section
+   Sponsors — Redesigned with two tiers
    ============================================================ */
 
 .sponsors-section {
@@ -380,71 +271,139 @@ a:hover {
   line-height: 1.6;
 }
 
-.sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-  padding: 2rem;
-  background: rgba(22, 12, 19, 0.5);
-  border: 3px solid #7f8aa8;
+.sponsor-tier-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  color: #7f8aa8;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #7f8aa8;
 }
 
-.sponsor-logo {
+.sponsor-tier-title:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+/* Infrastructure Partners — horizontal cards */
+.sponsors-grid--infrastructure {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 700px;
+}
+
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.2rem 1.5rem;
+  background: rgba(22, 12, 19, 0.6);
+  border: 3px solid #7f8aa8;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.1s;
+}
+
+.sponsor-card:hover {
+  border-color: #fce126;
+  background: rgba(252, 225, 38, 0.05);
+  transform: translateX(4px);
+}
+
+.sponsor-card-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(50, 48, 90, 0.5);
+  border: 2px solid #7f8aa8;
+}
+
+.sponsor-card-logo img {
+  max-width: 70px;
+  max-height: 40px;
+  object-fit: contain;
+}
+
+.sponsor-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.sponsor-card-name {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  color: #fce126;
+  text-transform: uppercase;
+}
+
+.sponsor-card-desc {
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  color: #987b9e;
+  text-align: left;
+}
+
+/* Technology Partners — compact pills */
+.sponsors-grid--technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 0 auto 2rem;
+  max-width: 800px;
+}
+
+.sponsor-pill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1.5rem 1rem;
-  border: 3px solid transparent;
-  transition: all 0.1s;
+  gap: 0.4rem;
+  padding: 1rem 1.5rem;
+  background: rgba(22, 12, 19, 0.4);
+  border: 2px solid #32305a;
   text-decoration: none;
   color: #ffffff;
+  transition: all 0.1s;
+  min-width: 120px;
 }
 
-.sponsor-logo:hover {
-  border: 3px solid #fce126;
-  background: rgba(252, 225, 38, 0.1);
-  transform: translate(2px, 2px);
+.sponsor-pill:hover {
+  border-color: #fce126;
+  background: rgba(252, 225, 38, 0.05);
+  transform: translateY(-2px);
 }
 
-.sponsor-logo-img {
-  max-width: 100px;
-  max-height: 50px;
+.sponsor-pill-img {
+  max-width: 80px;
+  max-height: 36px;
   object-fit: contain;
   image-rendering: auto;
   filter: brightness(1.1);
 }
 
-.sponsor-name {
+.sponsor-pill-name {
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.6rem;
-  color: #fce126;
+  font-size: 0.55rem;
+  color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
-}
-
-.sponsor-desc {
-  font-family: 'VT323', monospace;
-  font-size: 1rem;
-  color: #987b9e;
-  text-align: center;
-  line-height: 1.3;
 }
 
 .sponsor-cta {
   font-size: 1.2rem;
   margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #7f8aa8;
 }
 
-.sponsor-cta a {
-  margin-left: 0.5rem;
-}
+.sponsor-cta a { margin-left: 0.5rem; }
 
-/* ============================================================
-   Footer
-   ============================================================ */
-
+/* Footer */
 .voxel-footer {
   background: #32305a;
   border-top: 4px solid #000000;
@@ -470,21 +429,9 @@ a:hover {
   text-transform: uppercase;
 }
 
-.footer-section p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-}
-
-.footer-section a {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact-email a {
-  display: inline;
-}
+.footer-section p { font-size: 1.2rem; line-height: 1.5; margin-bottom: 0.5rem; }
+.footer-section a { display: block; font-size: 1.1rem; margin-bottom: 0.5rem; }
+.contact-email a { display: inline; }
 
 .footer-bottom {
   max-width: 1200px;
@@ -495,16 +442,7 @@ a:hover {
   font-size: 1rem;
 }
 
-.sponsor-credit {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #987b9e;
-}
-
-/* ============================================================
-   Responsive
-   ============================================================ */
-
+/* Responsive */
 @media (max-width: 768px) {
   .hero-title { font-size: 2rem; }
   .hero-subtitle { font-size: 1rem; }
@@ -512,12 +450,16 @@ a:hover {
   .section-title { font-size: 1.1rem; }
   .network-bar-content { flex-direction: column; gap: 0.5rem; align-items: center; }
   .footer-content { grid-template-columns: 1fr; }
-  .sponsors-grid { grid-template-columns: repeat(2, 1fr); padding: 1rem; }
+  .sponsors-grid--technology { grid-template-columns: repeat(2, 1fr); padding: 1rem; }
   .hero-actions { flex-direction: column; align-items: center; }
+  .sponsor-card { flex-direction: column; text-align: center; }
+  .sponsor-card-info { align-items: center; }
+  .sponsor-card-desc { text-align: center; }
 }
 
 @media (max-width: 480px) {
   .hero-title { font-size: 1.5rem; }
   .voxel-button { font-size: 0.7rem; padding: 0.8rem 1rem; }
-  .sponsors-grid { grid-template-columns: 1fr; }
+  .sponsors-grid--technology { grid-template-columns: 1fr; }
+  .sponsor-tier-title { font-size: 0.6rem; }
 }
