@@ -394,8 +394,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
-  padding: 1.5rem;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
   border: 3px solid transparent;
   transition: all 0.1s;
   text-decoration: none;
@@ -408,74 +408,28 @@ a:hover {
   transform: translate(2px, 2px);
 }
 
-.sponsor-icon {
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  image-rendering: pixelated;
-}
-
-.sponsor-icon::before {
-  content: attr(data-icon);
-}
-
-/* Pixel art sponsor icons */
-.sponsor-icon--1p {
-  background: #32305a;
-  border: 3px solid #fce126;
-}
-.sponsor-icon--1p::before {
-  content: "🔑";
-}
-
-.sponsor-icon--sentry {
-  background: #32305a;
-  border: 3px solid #fce126;
-}
-.sponsor-icon--sentry::before {
-  content: "👁️";
-}
-
-.sponsor-icon--algolia {
-  background: #32305a;
-  border: 3px solid #fce126;
-}
-.sponsor-icon--algolia::before {
-  content: "🔍";
-}
-
-.sponsor-icon--termius {
-  background: #32305a;
-  border: 3px solid #fce126;
-}
-.sponsor-icon--termius::before {
-  content: "💻";
-}
-
-.sponsor-icon--cloudnest {
-  background: #32305a;
-  border: 3px solid #fce126;
-}
-.sponsor-icon--cloudnest::before {
-  content: "☁️";
-}
-
-.sponsor-icon--pollinations {
-  background: #32305a;
-  border: 3px solid #fce126;
-}
-.sponsor-icon--pollinations::before {
-  content: "🌸";
+.sponsor-logo-img {
+  max-width: 100px;
+  max-height: 50px;
+  object-fit: contain;
+  image-rendering: auto;
+  filter: brightness(1.1);
 }
 
 .sponsor-name {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.6rem;
-  color: #ffffff;
+  color: #fce126;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.sponsor-desc {
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+  color: #987b9e;
+  text-align: center;
+  line-height: 1.3;
 }
 
 .sponsor-cta {
