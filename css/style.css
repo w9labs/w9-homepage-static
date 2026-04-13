@@ -170,12 +170,15 @@ a:hover { color: #ffffff; text-shadow: 0 0 8px #fce126; }
 .hero-content { position: relative; z-index: 10; }
 
 .hero-logo {
-  width: 120px;
+  width: min(280px, 60vw);
   height: auto;
   margin: 0 auto 1.5rem;
   display: block;
-  filter: drop-shadow(4px 4px 0 #000000);
+  filter: drop-shadow(4px 4px 0 rgba(0,0,0,.7));
+  transition: transform .3s;
 }
+
+.hero-section:hover .hero-logo { transform: scale(1.02); }
 
 .hero-title {
   font-family: 'Press Start 2P', monospace;
@@ -470,11 +473,21 @@ a:hover { color: #ffffff; text-shadow: 0 0 8px #fce126; }
   .sponsor-card { flex-direction: column; text-align: center; }
   .sponsor-card-info { align-items: center; }
   .sponsor-card-desc { text-align: center; }
+  .hero-logo { width: min(220px, 55vw); }
 }
 
 @media (max-width: 480px) {
+  html { font-size: 15px; }
   .hero-title { font-size: 1.5rem; }
-  .voxel-button { font-size: 0.7rem; padding: 0.8rem 1rem; }
+  .hero-subtitle { font-size: 0.85rem; }
+  .hero-description { font-size: 1rem; }
+  .voxel-button { font-size: 0.6rem; padding: 0.7rem 0.9rem; }
   .sponsors-grid--technology { grid-template-columns: 1fr; }
   .sponsor-tier-title { font-size: 0.6rem; }
+  .hero-logo { width: min(170px, 50vw); margin-bottom: 1rem; }
+  .section-title { font-size: 0.9rem; margin-bottom: 2rem; }
+  .footer-logo { width: 140px; }
+  .sponsors-section { padding: 2rem 1rem; }
+  .network-bar { padding: 0.75rem 1rem; }
+  .network-bar-content a { font-size: 0.5rem; padding: 0.4rem 0.6rem; }
 }
