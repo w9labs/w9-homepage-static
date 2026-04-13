@@ -169,6 +169,14 @@ a:hover { color: #ffffff; text-shadow: 0 0 8px #fce126; }
 
 .hero-content { position: relative; z-index: 10; }
 
+.hero-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  display: block;
+  filter: drop-shadow(4px 4px 0 #000000);
+}
+
 .hero-title {
   font-family: 'Press Start 2P', monospace;
   font-size: 4rem;
@@ -427,6 +435,13 @@ a:hover { color: #ffffff; text-shadow: 0 0 8px #fce126; }
   color: #fce126;
   margin-bottom: 1rem;
   text-transform: uppercase;
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 .footer-section p { font-size: 1.2rem; line-height: 1.5; margin-bottom: 0.5rem; }
