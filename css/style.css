@@ -491,3 +491,101 @@ a:hover { color: #ffffff; text-shadow: 0 0 8px #fce126; }
   .network-bar { padding: 0.75rem 1rem; }
   .network-bar-content a { font-size: 0.5rem; padding: 0.4rem 0.6rem; }
 }
+
+/* ============================================================
+   Legal Pages — Privacy / Terms
+   ============================================================ */
+
+.legal-section { padding: 2rem 0; }
+
+.legal-section .section-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.3rem;
+  color: #fce126;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  border-bottom: 4px solid #fce126;
+  padding-bottom: 1rem;
+}
+
+.legal-subtitle {
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  color: #987b9e;
+  margin-bottom: 1.5rem;
+}
+
+.legal-intro {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #d4c8d0;
+  margin-bottom: 2rem;
+}
+
+.legal-h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.8rem;
+  color: #0a8c88;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #32305a;
+}
+
+.legal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.legal-list li {
+  font-family: 'VT323', monospace;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #d4c8d0;
+  padding: 0.6rem 0 0.6rem 1.5rem;
+  position: relative;
+  border-bottom: 1px solid #2a2545;
+}
+
+.legal-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #fce126;
+}
+
+.legal-list li code {
+  background: #32305a;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.95rem;
+  color: #fce126;
+}
+
+.legal-list li strong {
+  color: #ffffff;
+}
+
+.legal-list li a {
+  color: #fce126;
+}
+
+.legal-list li a:hover {
+  text-shadow: 0 0 8px #fce126;
+}
+
+.legal-section .voxel-button {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .legal-section { padding: 1rem 0; }
+  .legal-section .section-title { font-size: 0.9rem; }
+  .legal-h2 { font-size: 0.65rem; }
+  .legal-list li { font-size: 1.05rem; }
+  .legal-section .voxel-button { display: block; margin-bottom: 0.75rem; }
+  .legal-section .voxel-button--secondary { margin-left: 0 !important; }
+}
